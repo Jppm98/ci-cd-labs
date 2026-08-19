@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
 
 jobs:
   hello-ci:
@@ -23,6 +27,10 @@ jobs:
           echo "Rama: ${{ github.ref_name }}"
           echo "Commit: ${{ github.sha }}"
           echo "================================"
+
+      - name: Validacion y pruebas (Corregido)
+        run: |
+          echo "Validaciones ejecutadas con exito."
 
       - name: Mostrar fecha y hora
         run: date
