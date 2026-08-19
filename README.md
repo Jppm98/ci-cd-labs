@@ -2,7 +2,7 @@
 
 Este repositorio contiene la implementación y evolución de los pipelines de Integración Continua (CI) y Despliegue Continuo (CD) para el proyecto del módulo.
 
-## 🚀 Descripción del Proyecto
+##  Descripción del Proyecto
 
 El objetivo de este proyecto es implementar flujos de trabajo automatizados utilizando **GitHub Actions**, integrando:
 - Estrategias de branching profesional (`main` y ramas `feature/*`).
@@ -10,7 +10,7 @@ El objetivo de este proyecto es implementar flujos de trabajo automatizados util
 - Verificaciones del entorno y dependencias.
 - Protección de ramas y Quality Gates.
 
-## 🌳 Estrategia de Branching
+## Estrategia de Branching
 
 Se utiliza una estrategia basada en **Feature Branches** (Ramas de funcionalidad):
 
@@ -24,7 +24,7 @@ main (Rama protegida / Producción)
 - **`feature/*`**: Ramas dedicadas al desarrollo de nuevas características o documentación.
 - **Pull Requests**: Mecanismo formal de revisión de código y validación obligatoria por CI antes de la integración.
 
-## ⚙️ Estructura del Pipeline
+## Estructura del Pipeline
 
 El pipeline configurado en `.github/workflows/pipeline.yml` se ejecuta ante:
 - Pushes a la rama `main` y ramas `feature/**`.

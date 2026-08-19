@@ -28,6 +28,11 @@ jobs:
           echo "Commit: ${{ github.sha }}"
           echo "================================"
 
+      - name: Paso con error deliberado (Simulacion de fallo)
+        run: |
+          echo "Simulando un error en pruebas o compilacion..."
+          exit 1
+
       - name: Mostrar fecha y hora
         run: date
 
