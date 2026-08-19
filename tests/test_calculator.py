@@ -3,8 +3,7 @@ import pytest
 from app.calculator import sumar, restar, multiplicar, dividir, es_par
 
 def test_sumar():
-    # Error deliberado para simular un fallo en el Quality Gate (Laboratorio 3 - Parte 4)
-    assert sumar(2, 3) == 999
+    assert sumar(2, 3) == 5
     assert sumar(-1, 1) == 0
     assert sumar(0, 0) == 0
 
